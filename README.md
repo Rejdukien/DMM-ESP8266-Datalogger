@@ -2,7 +2,7 @@ ESP8266 DMM Datalogger
 ---
 All started with my attempt to eeprom-modify an Aneng Q10 to enable the RS232/UART interface. While the DTM0660L chip used in that multimeter supports that, the manufacturer of the multimeter repurposed the UART TX pin for the front button matrix.  
 
-Hence my next attempt: Sniffing the communication between the DMM IC and the LCD IC. The DTM0660L sends 137 bits to that unmarked IC, each bit standing for the state of a certain segment on the LCD.  
+Hence my next attempt: Sniffing the communication between the DMM IC and the LCD IC. Used a cheap 8ch logic analyzer clone and pondered over the displayed information for a day. Turns out, the DTM0660L sends 137 bits to that unmarked IC, each bit standing for the state of a certain segment on the LCD.  
 
 This little project sniffs that SPI traffic to reconstruct what the multimeter is currently displaying and sends that information via wifi to a server running influxdb.
 
