@@ -15,6 +15,7 @@ Currently supports Voltage DC/AC, Current DC/AC, Resistance, Temperature and fre
 * GND of the ESP8266 hooked up to BAT-
 * 3V3 of the ESP8266 hooked up to VDD testpad
 * Case just barely fits a WeMos D1 Mini (wrapped in kapton tape)
+* Miraculously, NCV doesn't freak out. But it's still pretty garbage.
 
 ### Todo?
 * Add in support for capacitance
