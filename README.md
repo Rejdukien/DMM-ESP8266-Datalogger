@@ -9,7 +9,7 @@ This little project sniffs that SPI traffic to reconstruct what the multimeter i
 Currently supports Voltage DC/AC, Current DC/AC, Resistance, Temperature and frequency when in one of the AC modes.
 
 ### Quick information
-* Uses Zhongyi ZTY multimeter, Aneng Q10 is just a rebranded version of it
+* Uses Zoyi/Zotek ZTY multimeter, Aneng Q10 is just a rebranded version of it; There's likely other rebrands, too.
 * Copy `secrets.h.example` to `secrets.h` and fill with your own information
 * Pin D5,D6,D7 are hooked up to clock, data and enable/cs
 * GND of the ESP8266 hooked up to BAT-
